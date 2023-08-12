@@ -113,7 +113,7 @@ describe('Server', () => {
         InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
       );
       expect(body.data.content).to.include(
-        'https://discord.com/oauth2/authorize?client_id=123456789&scope=applications.commands',
+        'https://go.dantis.me/chance-bot',
       );
       expect(body.data.flags).to.equal(InteractionResponseFlags.EPHEMERAL);
     });
