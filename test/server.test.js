@@ -112,9 +112,7 @@ describe('Server', () => {
       expect(body.type).to.equal(
         InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
       );
-      expect(body.data.content).to.include(
-        'https://go.dantis.me/chance-bot',
-      );
+      expect(body.data.content).to.include('https://go.dantis.me/chance-bot');
       expect(body.data.flags).to.equal(InteractionResponseFlags.EPHEMERAL);
     });
 
