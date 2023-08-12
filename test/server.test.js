@@ -5,7 +5,7 @@ import {
   InteractionType,
   InteractionResponseFlags,
 } from 'discord-interactions';
-import { AWW_COMMAND, INVITE_COMMAND } from '../src/commands.js';
+import { FLIP_COMMAND, INVITE_COMMAND } from '../src/commands.js';
 import sinon from 'sinon';
 import server from '../src/server.js';
 
@@ -58,11 +58,11 @@ describe('Server', () => {
       expect(body.type).to.equal(InteractionResponseType.PONG);
     });
 
-    it('should handle an AWW command interaction', async () => {
+    it('should handle a FLIP command interaction', async () => {
       const interaction = {
         type: InteractionType.APPLICATION_COMMAND,
         data: {
-          name: AWW_COMMAND.name,
+          name: FLIP_COMMAND.name,
         },
       };
 
