@@ -3,9 +3,9 @@
  * and registration.
  */
 
-export const AWW_COMMAND = {
-  name: 'awwww',
-  description: 'Drop some cuteness on this channel.',
+export const FLIP_COMMAND = {
+  name: 'flip',
+  description: 'Flips a coin.',
 };
 
 export const INVITE_COMMAND = {
